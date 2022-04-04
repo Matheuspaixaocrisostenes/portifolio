@@ -52,10 +52,17 @@ main{
     font-size: 1.2em;
 }
 
+.inicio i{
+    font-size: 1.5em;
+    color: crimson;
+    padding: 10px;
+}
+
 #about h2{
     text-align: center;
     border-bottom: 1px solid black;
     font-size: 2em;
+    color: crimson;
 }
 
 .sobre{
@@ -86,3 +93,10 @@ body{
     margin-bottom: 50px;
 }
 
+#contato{
+    margin-top: 50px;
+}
+
+.contact{
+    display: flex;
+}
