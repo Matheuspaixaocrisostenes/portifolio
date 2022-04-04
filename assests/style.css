@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    grid-area: navegacao;
+    background-color: gray;
+    padding: 60px;
+    margin-right: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+nav li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+nav a:hover{
+    background-color: rgb(187, 187, 187);
+}
+
+main{
+    grid-area: conteudo;
+}
+
+.inicio{
+    display: flex;
+    margin-top: 10px;
+}
+
+.inicio img{
+    width: 50%;
+    border-radius: 100%;
+}
+
+.inicio h1{
+    font-size: 3em;
+}
+
+.inicio p{
+    font-size: 1.2em;
+}
+
+#about h2{
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-size: 2em;
+}
+
+.sobre{
+    display: flex;
+    margin-top: 50px;
+}
+
+footer{
+    grid-area: rodape;
+    margin-top: -50px;
+    color: white;
+    z-index: 1;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    'navegacao conteudo'
+    'navegacao conteudo'
+    'rodape conteudo';
+}
+
+.projects{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
