@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+h1,h2,h3{
+    font-family: 'Patrick Hand', cursive;
+}
+
+p, a,span{
+    font-family: 'Roboto', sans-serif;
+}
+
 nav{
     grid-area: navegacao;
     background-color: gray;
@@ -70,6 +78,61 @@ main{
     margin-top: 50px;
 }
 
+.contact{
+    display: flex;
+    padding-left: 80px;
+    font-size: 1.2em;
+}
+
+.contact h3{
+    margin-right: 20px;
+}
+
+.contact i{
+    font-size: 1.2em;
+    color: crimson;
+    padding: 10px;
+}
+
+.contact div:nth-child(1){
+    border-right: 1px solid black;
+    margin-right: 50px;
+    padding: 10px;
+}
+
+.contact div:nth-child(2) input, button{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.contact div:nth-child(2) textarea{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.contact input[type=text], textarea{
+    width: 400px;
+    border: none;
+    box-shadow: 3px 3px 6px 0px black;
+    border-radius: 10px;
+}
+
+.contact button{
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+
+.contact button:hover{
+    cursor: pointer;
+    background-color: rgb(134, 14, 38);
+    transition: 0.5s;
+}
+
 footer{
     grid-area: rodape;
     margin-top: -50px;
@@ -108,8 +171,10 @@ body{
 
 #contato{
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.contact{
-    display: flex;
+#contato h2{
+    text-align: center;
+    margin-bottom: 25px;
 }
