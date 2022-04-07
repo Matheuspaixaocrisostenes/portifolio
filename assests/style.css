@@ -111,6 +111,31 @@ main{
     border: none;
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.projects h2{
+    color: crimson;
+    text-align: center;
+    font-size: 2em;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    margin-top: 20px;
+}
+
+.row div{
+    width: 300px;
+    padding: 20px;
+    box-shadow: 3px 3px 6px 0px crimson;
+}
+
+.row div:nth-child(1),
+.row div:nth-child(3){
+    margin-left: 100px;
 }
 
 .contact{
