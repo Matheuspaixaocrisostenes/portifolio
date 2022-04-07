@@ -78,6 +78,41 @@ main{
     margin-top: 50px;
 }
 
+.sobre div:nth-child(1){
+    margin-left: 100px;
+    margin-right: 150px;
+}
+
+.sobre h3{
+    margin-top: 20px;
+}
+
+.cursando{
+    color: darkcyan;
+}
+
+.completo{
+    color: green;
+}
+
+.sobre ul li{
+    list-style: none;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sobre label{
+    font-family: 'Roboto', sans-serif;
+}
+
+.sobre button{
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
 .contact{
     display: flex;
     padding-left: 80px;
