@@ -272,3 +272,50 @@ body{
     text-align: center;
     margin-bottom: 25px;
 }
+
+@media(max-width: 950px){
+    nav{
+        display: none;
+    }
+    body{
+        grid-template-areas: 
+        'conteudo'
+        'conteudo'
+        'conteudo'
+        'conteudo'
+        'conteudo'
+        'rodape';
+    }
+
+    .inicio{
+        flex-direction: column;
+    }
+
+    .sobre{
+        flex-direction: column;
+    }
+
+    .row{
+        display: grid;
+        grid-template-columns: none;
+    }
+
+    .row div:nth-child(2),
+    .row div:nth-child(4){
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+
+    .contact{
+        flex-direction: column;
+        border: none;
+    }
+    .contact div:nth-child(1){
+        border-right: none;
+    }
+
+    footer{
+        color: black;
+        margin-top: 5px;
+    }
+}
