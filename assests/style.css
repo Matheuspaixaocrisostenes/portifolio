@@ -138,9 +138,43 @@ main{
     margin-left: 100px;
 }
 
+.projeto-img > img{
+    width: 350px;
+    display: none;
+    margin-top: 20px;
+}
+
+.projeto-img:hover{
+    width: 400px;
+    display: block;
+    transition: 0.5s;
+}
+
+.projeto-img:hover img{
+    display: block;
+    transition: 0.5s;
+}
+
+[mp-link]{
+    display: none;
+    margin-top: 20px;
+}
+
+[mp-link] a{
+    text-decoration: none;
+    color: white;
+    background-color: crimson;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.projeto-img:hover [mp-link]{
+    display: block;
+}
+
 .contact{
     display: flex;
-    padding-left: 80px;
+    padding-left: 50px;
     font-size: 1.2em;
 }
 
