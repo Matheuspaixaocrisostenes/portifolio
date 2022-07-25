@@ -8,7 +8,7 @@ h1,h2,h3{
     font-family: 'Patrick Hand', cursive;
 }
 
-p, a,span{
+p, a,span, li{
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
@@ -78,6 +78,44 @@ nav ul li a:hover{
 .icons i{
     color: crimson;
     font-size: 1.5em;
+}
+
+.center{
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.center h2{
+    font-size: 1.5em;
+}
+
+#about h2{
+    font-size: 1.7em;
+    margin-bottom: 15px;
+}
+
+#about h3{
+    margin-top: 10px;
+}
+
+#about button{
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cursando{
+    color: rgb(25, 132, 175);
+}
+
+.completo{
+    color: green;
 }
 
 @media(max-width: 600px){
