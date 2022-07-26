@@ -80,6 +80,15 @@ nav ul li a:hover{
     font-size: 1.5em;
 }
 
+.icons i:hover{
+    color: white;
+    background-color: crimson;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.5s;
+    transform: translateY(-8px);
+}
+
 .center{
     text-align: center;
     font-size: 1.2em;
@@ -116,6 +125,11 @@ nav ul li a:hover{
 
 .completo{
     color: green;
+}
+
+#projects{
+    color: white;
+    height: 700px;
 }
 
 #projects h2{
@@ -167,6 +181,28 @@ nav ul li a:hover{
 .card:hover .legenda{
     display: block;
 
+}
+
+#contato i{
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(40, 39, 39);
+    color: white;
+    padding: 5px;
+}
+
+footer a{
+    text-decoration: none;
+    color: crimson;
+}
+
+footer a:hover{
+    color: rgb(138, 16, 41);
+    transition: 0.5s;
 }
 
 @media(max-width: 600px){
