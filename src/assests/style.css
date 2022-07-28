@@ -242,6 +242,10 @@ footer a:hover{
         font-size: 2em;
     }
 
+    .little{
+        font-size: 1em;
+    }
+
     .col{
         flex-direction: column;
     }
