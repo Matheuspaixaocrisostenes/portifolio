@@ -69,10 +69,10 @@ nav ul li a:hover{
     margin-top: 20px;
 }
 
-.icons li{
+.icons a{
     list-style: none;
-    display: inline;
     padding: 5px;
+    font-size: 1.2em;
 }
 
 .icons i{
@@ -107,6 +107,14 @@ nav ul li a:hover{
 
 #about h3{
     margin-top: 10px;
+}
+
+#about ul{
+    list-style: none;
+}
+
+#about progress{
+    margin-bottom: 10px;
 }
 
 #about button{
