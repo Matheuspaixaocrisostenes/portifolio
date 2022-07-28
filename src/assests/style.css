@@ -117,7 +117,8 @@ nav ul li a:hover{
     margin-bottom: 10px;
 }
 
-#about button{
+#about a{
+    display: block;
     background-color: crimson;
     color: white;
     border: none;
@@ -214,7 +215,7 @@ nav ul li a:hover{
     color: crimson;
 }
 
-#contato i{
+#contact i{
     margin-bottom: 30px;
     font-size: 2.5em;
 }
@@ -254,7 +255,7 @@ footer a:hover{
         height: 200vh;
     }
 
-    #about button{
+    #about a{
         font-size: 1.5em;
         margin-top: 50px;
         margin-bottom: 50px;
