@@ -143,6 +143,11 @@ nav ul li a:hover{
 #projects h2{
     text-align: center;
     font-size: 2.5em;
+    padding-top: 20px;
+}
+
+#projects p{
+    text-align: center;
 }
 
 .card {
@@ -178,17 +183,35 @@ nav ul li a:hover{
 }
 
 .legenda{
-    /* display: none; */
+    display: none;
+    background-color: rgba(0, 0, 0, 0.714);
+    height: 100%;
+    padding: 15px;
     color: white;
+    border-radius: 15px;
 }
 
-.card:hover{
-    filter: brightness(50%);
-}
-
-.card:hover .legenda{
+.legenda a{
+    color: crimson;
+    margin-top: 10px;
     display: block;
+}
 
+.legenda a:hover{
+    background-color: crimson;
+    color: white;
+    padding: 5px;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.card:hover > .legenda{
+    display: block;
+}
+
+[mp-link]{
+    text-decoration: none;
+    color: crimson;
 }
 
 #contato i{
@@ -214,7 +237,26 @@ footer a:hover{
 }
 
 @media(max-width: 600px){
+    .col h1{
+        font-size: 2em;
+    }
+
     .col{
         flex-direction: column;
+    }
+
+    #about div:nth-child(2){
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #projects{
+        height: 200vh;
+    }
+
+    #about button{
+        font-size: 1.5em;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
