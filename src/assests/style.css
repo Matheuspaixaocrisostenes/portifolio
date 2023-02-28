@@ -5,6 +5,7 @@
 }
 
 html{
+    height: 100%;
     scroll-behavior: smooth;
 }
 
@@ -17,256 +18,107 @@ p, a,span, li{
     text-decoration: none;
 }
 
-nav{
-    background-color: rgb(40, 39, 39);
-}
+/* Menu */
 
-nav ul{
+nav.desktop{
     display: flex;
-    justify-content: end;
-}
-
-nav ul li{
-    list-style: none;
-    text-decoration: none;
-    padding: 15px;
-}
-
-nav ul li a{
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #0D0D0D;
     color: crimson;
-    padding: 5px;
-    font-size: 1.2em;
+    position: fixed;
+    width: 100%;
 }
 
-nav ul li a:hover{
-    background-color: rgb(159, 23, 50);
-    color: white;
-    transition: 0.5s;
-    border-radius: 15px;
+nav.desktop ul{
+    list-style-type: none;
+}
+
+nav.desktop ul li{
+    display: inline;
+    padding: 20px;
+    font-size: 18px;
+}
+
+nav.desktop a{
+    color: crimson;
+}
+
+nav.desktop ul.icons li{
+    position: relative;
     padding: 10px;
 }
 
-.col{
+nav.desktop ul.icons li i{
+    position: relative;
+    font-size: 1.5em;
+}
+
+nav.desktop ul.icons li i:hover{
+    animation: subir 1s infinite;
+}
+
+/* *** */
+
+/* Banner */
+
+.banner{
+    padding: 150px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.col h1{
-    color: white;
-    font-size: 3em;
-}
-
-.black{
-    background-color: rgb(40, 39, 39);
-    height: 500px;
-}
-
-.round{
-    border-radius: 100%;
-    max-width: 300px;
-    width: 90%;
-    box-shadow: 0px 0px 20px 6px rgb(39, 205, 156);
-}
-
-.icons{
-    margin-top: 20px;
-}
-
-.icons a{
-    list-style: none;
-    padding: 5px;
-    font-size: 1.2em;
-}
-
-.icons i{
+    justify-content: space-between;
+    background-color: #0D0D0D;
     color: crimson;
     font-size: 1.5em;
 }
 
-.icons i:hover{
-    color: white;
+.banner p{
+    line-height: 3em;
+}
+
+.bola{
     background-color: crimson;
-    border-radius: 10px;
-    padding: 5px;
-    transition: 0.5s;
-    transform: translateY(-8px);
+    border-radius: 100%;
+    width: 400px;
+    height: 300px;
 }
 
-.center{
-    text-align: center;
-    font-size: 1.2em;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.bola img{
+    width: 400px;
+    height: 250px;
+    animation: subir-mais 3s infinite;
+    position: relative;
 }
 
-.center h2{
-    font-size: 2em;
-}
+/* *** */
 
-#about h2{
-    font-size: 1.7em;
-    margin-bottom: 15px;
-}
+/* Animacoes */
 
-#about h3{
-    margin-top: 10px;
-}
-
-#about ul{
-    list-style: none;
-}
-
-#about progress{
-    margin-bottom: 10px;
-}
-
-#about a{
-    display: block;
-    background-color: crimson;
-    color: white;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.cursando{
-    color: rgb(25, 132, 175);
-}
-
-.completo{
-    color: green;
-}
-
-#projects{
-    color: white;
-    height: 700px;
-}
-
-#projects h2{
-    text-align: center;
-    font-size: 2.5em;
-    padding-top: 20px;
-}
-
-#projects p{
-    text-align: center;
-}
-
-.card {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: 1px 0px 20px 1px rgba(0, 0, 0, 0.81);
-    padding: 10px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-.img-project{
-    background-position: center center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-#project-1{
-    background-image: url('../imgs/projeto-1.png');
-}
-
-#project-2{
-    background-image: url('../imgs/projeto-2.png');
-}
-
-#project-3{
-    background-image: url('../imgs/projeto-3.png');
-}
-
-#project-4{
-    background-image: url('../imgs/projeto-4.png');
-}
-
-.legenda{
-    display: none;
-    background-color: rgba(0, 0, 0, 0.714);
-    height: 100%;
-    padding: 15px;
-    color: white;
-    border-radius: 15px;
-}
-
-.legenda a{
-    color: crimson;
-    margin-top: 10px;
-    display: block;
-}
-
-.legenda a:hover{
-    background-color: crimson;
-    color: white;
-    padding: 5px;
-    width: 40%;
-    border-radius: 15px;
-}
-
-.card:hover > .legenda{
-    display: block;
-}
-
-[mp-link]{
-    text-decoration: none;
-    color: crimson;
-}
-
-#contact i{
-    margin-bottom: 30px;
-    font-size: 2.5em;
-}
-
-footer{
-    text-align: center;
-    background-color: rgb(40, 39, 39);
-    color: white;
-    padding: 5px;
-}
-
-footer a{
-    text-decoration: none;
-    color: crimson;
-}
-
-footer a:hover{
-    color: rgb(138, 16, 41);
-    transition: 0.5s;
-}
-
-@media(max-width: 600px){
-    .col h1{
-        font-size: 2em;
+@keyframes subir {
+    0%{
+        top: 0;
     }
 
-    .little{
-        font-size: 1em;
+    50%{
+        top: -5px;
     }
 
-    .col{
-        flex-direction: column;
-    }
-
-    #about div:nth-child(2){
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    #projects{
-        height: 200vh;
-    }
-
-    #about a{
-        font-size: 1.5em;
-        margin-top: 50px;
-        margin-bottom: 50px;
+    100%{
+        top: 0;
     }
 }
+
+@keyframes subir-mais {
+    0%{
+        top: 0;
+    }
+
+    50%{
+        top: -50px;
+    }
+
+    100%{
+        top: 0px;
+    }
+}
+
+/* *** */
