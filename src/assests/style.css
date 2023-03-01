@@ -9,6 +9,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: #0D0D0D;
+}
+
 h1,h2,h3{
     font-family: 'Patrick Hand', cursive;
 }
@@ -56,6 +60,45 @@ nav.desktop ul.icons li i{
 
 nav.desktop ul.icons li i:hover{
     animation: subir 1s infinite;
+}
+
+/* *** */
+
+/* Menu mobile */
+
+button{
+    padding: 5px 20px;
+    font-size: 2em;
+    color: crimson;
+    border: none;
+    background-color: #0d0d0d8e;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    z-index: 3;
+}
+
+.menu-mobile{
+    text-align: center;
+    font-size: 2em;
+    display: none;
+    line-height: 2em;
+    height: 100vh;
+    background-color: #1E1E1E;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu-mobile ul{
+    position: relative;
+    top: 30%;
+}
+
+.menu-mobile ul li a{
+    color: crimson;
 }
 
 /* *** */
@@ -122,3 +165,32 @@ nav.desktop ul.icons li i:hover{
 }
 
 /* *** */
+
+/* Responsivo */
+
+@media screen and (max-width: 848px){
+    #btn{
+        display: block;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        padding: 90px 10px;
+        text-align: center;
+    }
+
+    .bola{
+        margin: 0 auto;
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .bola img{
+        width: 80%;
+        height: 60%;
+    }
+}

@@ -38,6 +38,17 @@
         </ul>
     </nav>
 
+    <button id="btn" onclick="clickMenu()"><i class="fas fa-bars"></i></button>
+
+    <nav class="menu-mobile" id="menu">
+        <ul id="itens">
+            <li><a href="#">Sobre Mim</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Conhecimentos</a></li>
+            <li><a href="#">Fale Comigo</a></li>
+        </ul>
+    </nav>
+
     <main>
         <section class="banner">
             <div>
@@ -52,6 +63,17 @@
             </div>
         </section>
     </main>
+
+    <script>
+
+        function clickMenu(){
+            if(menu.style.display == 'block'){
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 
 </html>
