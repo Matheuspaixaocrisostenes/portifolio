@@ -127,6 +127,11 @@ button{
 
 .banner h2{
     color: white;
+    width: 33ch;
+    border-right: 4px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: escrever 3s steps(33), piscar 0.5s infinite step-end alternate;
 }
 
 .banner p{
@@ -358,6 +363,22 @@ footer a:hover{
 
     100%{
         border-color: blue;
+    }
+}
+
+@keyframes escrever {
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 33ch;
+    }
+}
+
+@keyframes piscar {
+    50%{
+        border-color: transparent;
     }
 }
 
