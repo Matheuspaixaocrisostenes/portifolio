@@ -169,6 +169,45 @@ button{
 
 /* *** */
 
+/* Projects */
+
+/* *** */
+
+/* Skills */
+
+#skills{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 50px;
+}
+
+.center{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.card{
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    text-transform: uppercase;
+    border-top-left-radius: 20px;
+    border-bottom: 5px solid red;
+    animation: trocaCor 3s infinite;
+}
+
+/* *** */
+
 /* Animacoes */
 
 @keyframes subir {
@@ -196,6 +235,24 @@ button{
 
     100%{
         top: 0px;
+    }
+}
+
+@keyframes trocaCor{
+    0%{
+        border-color: red;
+    }
+
+    10%{
+        border-color: purple;
+    }
+
+    50%{
+        border-color: crimson;
+    }
+
+    100%{
+        border-color: blue;
     }
 }
 
