@@ -42,6 +42,8 @@ nav.desktop ul{
 nav.desktop ul li{
     display: inline;
     padding: 20px;
+    position: relative;
+    top: 10px;
     font-size: 18px;
 }
 
@@ -61,6 +63,14 @@ nav.desktop ul.icons li i{
 
 nav.desktop ul.icons li i:hover{
     animation: subir 1s infinite;
+}
+
+nav.desktop span{
+    color: blue;
+}
+
+nav.desktop p{
+    font-size: 2em;
 }
 
 /* *** */
@@ -113,6 +123,10 @@ button{
     background-color: #0D0D0D;
     color: crimson;
     font-size: 1.5em;
+}
+
+.banner h2{
+    color: white;
 }
 
 .banner p{
@@ -227,6 +241,21 @@ button{
     padding: 10px 2%;
 }
 
+#courses div:last-child {
+    padding-bottom: 40px;
+}
+
+#courses a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: crimson;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 15px;
+    position: relative;
+    top: 15px;
+}
+
 /* *** */
 
 /* Contact */
@@ -259,6 +288,26 @@ button{
 #contact ul.icons li i:hover{
     animation: subir 1s infinite;
     color: rgb(39, 143, 39);
+    transition: .5s;
+}
+
+/* *** */
+
+/* Footer */
+
+footer{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+    color: white;
+}
+
+footer a{
+    color: crimson;
+}
+
+footer a:hover{
+    color: rgb(158, 16, 45);
     transition: .5s;
 }
 
@@ -353,6 +402,12 @@ button{
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
+    }
+
+    nav.desktop p{
+        font-size: 1em;
+        position: relative;
+        top: 10px;
     }
 }
 
