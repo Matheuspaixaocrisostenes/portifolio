@@ -56,7 +56,7 @@ nav.desktop ul.menu a{
 }
 
 nav.desktop ul.menu a:hover{
-    border-color: green;
+    border-color: blue;
     transition: 0.5s;
     animation: piscar 1.5s infinite;
 }
@@ -148,7 +148,7 @@ button{
 }
 
 .bola{
-    background-color: crimson;
+    background-color: blue;
     border-radius: 100%;
     width: 400px;
     height: 300px;
@@ -231,6 +231,41 @@ button{
 
 .project-single img{
     width: 250px;
+}
+
+.project-single:hover{
+    filter: brightness(80%);
+    transition: .2s;
+}
+
+.project-single:hover .hidden{
+    display: block;
+    transition: .5s;
+}
+
+.hidden{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: relative;
+    top: -50%;
+    display: none;
+    color: crimson;
+    filter: brightness(100%);
+}
+
+.hidden a{
+    color: crimson;
+}
+
+.hidden a:hover{
+    animation: subir 1s infinite;
+    position: relative;
+}
+
+.hidden i{
+    font-size: 2.5em;
+    padding: 10px;
 }
 
 /* *** */
