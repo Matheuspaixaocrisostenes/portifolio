@@ -370,7 +370,7 @@ button{
 
 #contact ul.icons li i:hover{
     animation: subir 1s infinite;
-    color: rgb(39, 143, 39);
+    color: rgb(25, 25, 163);
     transition: .5s;
 }
 
