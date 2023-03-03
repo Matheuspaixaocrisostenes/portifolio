@@ -51,6 +51,16 @@ nav.desktop a{
     color: crimson;
 }
 
+nav.desktop ul.menu a{
+    border-bottom: 3px solid transparent;
+}
+
+nav.desktop ul.menu a:hover{
+    border-color: green;
+    transition: 0.5s;
+    animation: piscar 1.5s infinite;
+}
+
 nav.desktop ul.icons li{
     position: relative;
     padding: 10px;
@@ -127,11 +137,10 @@ button{
 
 .banner h2{
     color: white;
-    width: 33ch;
     border-right: 4px solid;
     white-space: nowrap;
     overflow: hidden;
-    animation: escrever 3s steps(33), piscar 0.5s infinite step-end alternate;
+    animation: escrever 4s steps(33), piscar 0.5s infinite step-end alternate;
 }
 
 .banner p{
@@ -372,7 +381,7 @@ footer a:hover{
     }
 
     to{
-        width: 33ch;
+        width: 98%;
     }
 }
 
