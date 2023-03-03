@@ -199,6 +199,40 @@ button{
 
 /* Projects */
 
+#projects{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.project-single{
+    text-align: center;
+    width: 290px;
+    height: 290px;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-single h2{
+    position: relative;
+    top: 20px;
+}
+
+.project-single p{
+    position: relative;
+    top: 40%;
+}
+
+.project-single img{
+    width: 250px;
+}
+
 /* *** */
 
 /* Skills */
