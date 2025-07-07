@@ -66,7 +66,9 @@
         <section id="about">
             <div class="foto"></div>
             <div>
-                <p>Olá!, meu nome é Matheus Paixão Crisostenes tenho 20 anos, Sou formado em Análise e Desenvovimento de sistemas na Anhanguera, sou apaixonado em descobrir novas coisas, tecnologias, Estou sempre procurando melhorar minhas habilidades a cada dia, tenho diversos Cursos de programação.</p>
+                <p>Olá!, meu nome é Matheus Paixão Crisostenes tenho <span id="age"></span> anos, 
+                    Sou formado em Análise e Desenvovimento de sistemas na Anhanguera e Pós graduado em Arquitetura de Software, 
+                    sou apaixonado em descobrir novas coisas, tecnologias, Estou sempre procurando melhorar minhas habilidades a cada dia, tenho diversos Cursos de programação.</p>
             </div>
         </section>
 
@@ -168,6 +170,11 @@
         <section id="courses">
             <h2>Formação Anterior</h2>
             <div>
+                <h3>Pós Graduação em Arquitetura de Software</h3>
+                <p>Completo</p>
+                <p>Na universidade Anhanguera</p>
+            </div>
+            <div>
                 <h3>Superior em Análise e Desenvolvimento de sistemas</h3>
                 <p>Completo</p>
                 <p>Na universidade Anhanguera</p>
@@ -230,6 +237,11 @@
                 menu.style.display = 'block'
             }
         }
+
+        let age = document.getElementById('age')
+        let anoAtual = new Date().getFullYear()
+        let idade = anoAtual - 2003
+        age.innerText = idade
     </script>
 </body>
 
